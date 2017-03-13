@@ -1,0 +1,56 @@
+
+/**
+ * Базовый стиль
+ */
+.chiffa-page-brain-block {
+	margin-bottom: 15px;
+	padding: 15px;
+	background-color: #f7f7f7;
+	border: 1px solid #aaa;
+	color: #555;
+}
+.chiffa-page-brain-block-wrapper {
+	margin: 0 auto;
+	max-width: 800px;
+}
+.chiffa-page-brain-block-header {
+	margin-bottom: 15px;
+	font-size: 22px;
+	font-weight: 700;
+}
+.chiffa-page-brain-block-body {
+
+}
+
+
+/**
+ * блог. обсуждаемые
+ */
+.chiffa-page-brain-block__action-blog.chiffa-page-brain-block__event-discussed {
+	background-color: #ffbca1;
+	border-color: #ff852b;
+	color: #904106
+}
+
+
+/**
+ * люди
+ */
+.chiffa-page-brain-block__action-people {
+	padding: 15px;
+	background-color: #e7b9ff;
+	border-color: #bc25ff;
+	border-radius: 15px;
+	text-align: center;
+}
+.chiffa-page-brain-block__action-people .chiffa-page-brain-block-header {
+	font-size: 28px;
+}
+.chiffa-page-brain-block__action-people .chiffa-page-brain-block-body {
+	font-style: italic;
+}
+.chiffa-page-brain-block__action-people .chiffa-page-brain-block-footer {
+	margin-top: 15px;
+	padding-top: 15px;
+	border-top: 1px dotted #bc25ff;
+}

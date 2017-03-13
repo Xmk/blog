@@ -1,0 +1,8 @@
+{
+    "templates": {
+        "brain-block": "brain-block.tpl"
+    },
+    "styles": {
+        "qwerty": "qwerty.css"
+    }
+}
