@@ -1,22 +1,22 @@
 
 {component_define_params params=[ 'mods', 'classes', 'attributes' ]}
 
-{* Îïðåäåëÿåì òåêóùèé ýêøí è ýâåíò *}
+{* ÐžÐ¿Ñ€ÐµÐ´ÐµÐ»ÑÐµÐ¼ Ñ‚ÐµÐºÑƒÑ‰Ð¸Ð¹ ÑÐºÑˆÐ½ Ð¸ ÑÐ²ÐµÐ½Ñ‚ *}
 {$action = Router::GetAction()}
 {$event = Router::GetActionEvent()}
 
-{* Ôîðìèðóåì íàçâàíèå øàáëîíà ýêøíà *}
+{* Ð¤Ð¾Ñ€Ð¼Ð¸Ñ€ÑƒÐµÐ¼ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ ÑˆÐ°Ð±Ð»Ð¾Ð½Ð° ÑÐºÑˆÐ½Ð° *}
 {$templateActionName = "action{$action|ucfirst}"}
 
-{* Ôîðìèðóåì íàçâàíèå øàáëîíà ýâåíòà *}
+{* Ð¤Ð¾Ñ€Ð¼Ð¸Ñ€ÑƒÐµÐ¼ Ð½Ð°Ð·Ð²Ð°Ð½Ð¸Ðµ ÑˆÐ°Ð±Ð»Ð¾Ð½Ð° ÑÐ²ÐµÐ½Ñ‚Ð° *}
 {$templateEventName = "event{$event|ucfirst}"}
 {$templateEvent = $LS->Component_GetTemplatePath('css-reset', "{$templateActionName}.{$templateEventName}")}
 
-{* Åñëè ñóùåñòâóåò øàáëîí ýâåíòà, âûâîäèì *}
+{* Ð•ÑÐ»Ð¸ ÑÑƒÑ‰ÐµÑÑ‚Ð²ÑƒÐµÑ‚ ÑˆÐ°Ð±Ð»Ð¾Ð½ ÑÐ²ÐµÐ½Ñ‚Ð°, Ð²Ñ‹Ð²Ð¾Ð´Ð¸Ð¼ *}
 {if $templateEvent}
 	{component "css-reset" template="{$templateActionName}.{$templateEventName}" action=$action event=$event params=$params}
 
-{* Èíà÷å âûâîäèì øàáëîí ýêøíà *}
+{* Ð˜Ð½Ð°Ñ‡Ðµ Ð²Ñ‹Ð²Ð¾Ð´Ð¸Ð¼ ÑˆÐ°Ð±Ð»Ð¾Ð½ ÑÐºÑˆÐ½Ð° *}
 {else}
 	{$templateAction = $LS->Component_GetTemplatePath('css-reset', $templateActionName)}
 	{if $templateAction}
